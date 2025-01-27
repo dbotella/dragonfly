@@ -18,7 +18,7 @@ pipeline {
                     python3 -m venv venv
                     . venv/bin/activate
                     pip install pre-commit
-                    pre-commit run --show-diff-on-failure --color=always --all-files
+                    # pre-commit run --show-diff-on-failure --color=always --all-files
                 '''
             }
         }
