@@ -15,7 +15,7 @@ pipeline {
         stage('Pre-commit checks') {
             steps {
                 sh '''
-                    python -m venv venv
+                    python3 -m venv venv
                     . venv/bin/activate
                     pip install pre-commit
                     pre-commit run --show-diff-on-failure --color=always --all-files
