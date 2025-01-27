@@ -13,11 +13,6 @@ pipeline {
 
     stages {
         stage('Pre-commit checks') {
-            agent {
-                docker {
-                    image 'python:latest'
-                }
-            }
             steps {
                 sh '''
                     python -m venv venv
